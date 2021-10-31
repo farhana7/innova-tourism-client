@@ -13,7 +13,7 @@ const Service = ({ service }) => {
 
       <Link to={`/taking/${_id}`}>
         <button className="w-full h-7 bg-red-800 text-white" to="/service">
-          Take a {name.toLowerCase()} trip
+          Take a {name.toLowerCase()} tour
         </button>
       </Link>
     </div>
