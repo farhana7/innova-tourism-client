@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Destination Vacation",
+    "description": "From East to West, North to South - We visit all over the World.Choose your destinaton with us. ",
+    "img": "https://wildernesswanderings.org/wp-content/uploads/2017/03/Mauritius-4.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Camping",
+    "description": "Between summer jobs, spring term courses, and the regular hustle and bustle of student life, getting away for a bit is necessary. You could hop on a plane and go somewhere far away…Or you could stay close to home, pitch a tent, and spend some time in the outdoors. Go camping this summer and learn a lot about yourself, your friends or family, and, of course, the great outdoors. ",
+    "img": "https://www.minuteschool.com/wp-content/uploads/2019/07/blog_campping.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Adventure",
+    "description": "When it comes to adventure tours, everyone’s looking for something a little different. That’s why we’ve put together the ultimate list of adventure excursions, catering to all preferences and travel tastes. Whether you’re looking for a relaxing, full-service cycling tour through the countryside, or a self-guided trek through unforgiving mountain terrain, we’ve got you covered. From private and group tours, to self-guided excursions, explore our list of adventure tours to find your perfect holiday.",
+    "img": "https://www.mountexperience.com/wp-content/uploads/2017/12/asdf.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Honeymoon Trip",
+    "description": "Book your Bali honeymoon package at affordable prices & get the best deals With Sharp Holidays and create some of the most romantic moments of your life with your loved one.",
+    "img": "https://d3hne3c382ip58.cloudfront.net/resized/750x420/8-days-silver-honeymoon-package-tour-2-331008_1552457120.JPG"
+  },
+  {
+    "id": 5,
+    "name": "Hop-ON Hop-Off",
+    "description": "When you’re visiting cities like Barcelona, the last thing you want is to have to spend lots of time figuring out how to get around. So one of the best ways to visit is by using a hop on hop off bus tour, to help you get around the major attractions in the city. We offer to discover more about the best hop on hop off bus tour options in Barcelona, routes, special discounts and more.",
+    "img": "https://www.dylanstours.com/wp-content/uploads/2019/01/dylans-tours-Best-San-Francisco-Hop-on-Hop-off-Tours-cable-car-tours-750x422-1-1280x720.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Group Trip",
+    "description": "Considered among the most popular types of travel, group tours have gained a lot of fame across the world at large.We offer group tours that have itineraries planned and supervised by experts, and fit snugly into your budget while taking you to some of the most exotic destinations in the world. ",
+    "img": "https://pro.regiondo.com/wp-content/uploads/2018/04/Blog_Instameet_SetUp.jpg"
+  }
+]
