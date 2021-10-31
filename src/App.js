@@ -39,9 +39,9 @@ function App() {
             <PrivateRoute path="/taking/:serviceId">
               <Taking></Taking>
             </PrivateRoute>
-            <PrivateRoute path="/addNewService">
+            <Route path="/addNewService">
               <AddNewService></AddNewService>
-            </PrivateRoute>
+            </Route>
             <Route path="/manageAllTrips">
               <ManageAllTrips></ManageAllTrips>
             </Route>
