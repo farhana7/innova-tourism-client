@@ -27,12 +27,16 @@ const ManageAllTrips = () => {
 
   return (
     <div>
-      <h2 className="text-green-900 font-semibold text-4xl">
+      <h2 className="text-green-900 font-semibold text-4xl mt-7">
         Manage all Tours / Trips
       </h2>
+      <br />
+
       {services.map((service) => (
         <div key={service._id}>
-          <h3>{service.name}</h3>
+          <h3 className="text-red-900 font-semibold text-3xl mt-9">
+            {service.name}
+          </h3>
           {/* <button
             className="w-64 h-12 bg-green-300"
             onClick={() => handleDelete(service._id)}
@@ -40,9 +44,8 @@ const ManageAllTrips = () => {
             Update
           </button> */}
           <br />
-          <br />
           <button
-            className="w-64 h-12 bg-yellow-300"
+            className="w-48 h-12 bg-yellow-300"
             onClick={() => handleDelete(service._id)}
           >
             Delete

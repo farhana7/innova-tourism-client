@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <>
       <img
-        className="w-full"
+        className="w-full h-auto"
         src="https://lp-cms-production.imgix.net/2019-06/384e10f39ebc6fab9b991467541ce8ed-dal-lake.jpg"
         alt=""
       />

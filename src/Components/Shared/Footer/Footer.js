@@ -2,22 +2,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white flex items-center justify-between">
+    <div className="bg-gray-900 text-white flex items-center justify-between">
       <div>
-        <h1>About Innova Tourism</h1>
-        <br />
+        <h1>CONTACT:</h1>
         <p>
-          About us
+          Phone : + 880 ..........
           <br />
-          The Innsbruck brand
-          <br />
-          Organisation chart
-          <br />
-          Teams and contact
-          <br />
-          Jobs at Innsbruck Tourismus
+          website : https://www.innotourism.info/en/
         </p>
       </div>
+
       <div>
         <h1>TOP TOPICS</h1>
         <p>
@@ -29,11 +23,14 @@ const Footer = () => {
         </p>
       </div>
       <div>
-        <h1>CONTACT:</h1>
+        <h1>ABOUT INNOVA TOURISM </h1>
+        <br />
         <p>
-          Phone : + 880 ..........
+          Organisation chart
           <br />
-          website : https://www.innotourism.info/en/
+          Teams and contact
+          <br />
+          Jobs at Innova Tourism
         </p>
       </div>
     </div>

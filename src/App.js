@@ -3,6 +3,7 @@ import "./App.css";
 import AddNewService from "./Components/AddNewService/AddNewService";
 import Home from "./Components/Home/Home/Home";
 import Services from "./Components/Home/Services/Services";
+import TourGuides from "./Components/Home/TourGuides/TourGuides";
 import Login from "./Components/Login/Login/Login";
 import ManageAllTrips from "./Components/ManageAllTrips/ManageAllTrips";
 
@@ -39,11 +40,14 @@ function App() {
             <PrivateRoute path="/taking/:serviceId">
               <Taking></Taking>
             </PrivateRoute>
-            <Route path="/addNewService">
+            <PrivateRoute path="/addNewService">
               <AddNewService></AddNewService>
-            </Route>
+            </PrivateRoute>
             <Route path="/manageAllTrips">
               <ManageAllTrips></ManageAllTrips>
+            </Route>
+            <Route path="/tourguides">
+              <TourGuides></TourGuides>
             </Route>
 
             <Route path="*">

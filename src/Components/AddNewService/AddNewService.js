@@ -19,9 +19,13 @@ const AddNewService = () => {
 
   return (
     <div className="add-service">
+      <br />
+      <br />
+      <br />
       <h2 className="text-green-900 font-semibold text-4xl">
         Please Add a New Service
       </h2>
+      <br />
       <br />
 
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -34,6 +38,12 @@ const AddNewService = () => {
         <input {...register("img")} placeholder=" Image url" />
         <input type="submit" />
       </form>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };

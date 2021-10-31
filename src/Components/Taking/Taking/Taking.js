@@ -45,10 +45,10 @@ const Taking = () => {
 
   return (
     <div>
-      <h2 className="text-red-900 font-semibold text-4xl">
+      <h2 className="text-red-900 font-semibold text-4xl mt-5">
         Details of : {service.name}
       </h2>
-      <h2 className="text-green-900 font-semibold text-4xl">
+      <h2 className="text-green-900 font-semibold text-4xl mt-5">
         This is for taking a Trip : {serviceId}
       </h2>
       <br />
