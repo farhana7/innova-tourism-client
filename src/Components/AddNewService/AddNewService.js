@@ -8,13 +8,15 @@ const AddNewService = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    axios.post("http://localhost:5000/provides", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("added successfully");
-        reset();
-      }
-      //   console.log(res);
-    });
+    axios
+      .post("https://shrieking-wizard-86176.herokuapp.com/provides", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("added successfully");
+          reset();
+        }
+        //   console.log(res);
+      });
   };
 
   return (

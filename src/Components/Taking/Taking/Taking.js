@@ -9,7 +9,7 @@ const Taking = () => {
   const [service, setService] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/provides/${serviceId}`)
+    fetch(`https://shrieking-wizard-86176.herokuapp.com/provides/${serviceId}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -25,7 +25,7 @@ const Taking = () => {
     //* const service = setService();    ---------// 24, 25 line
     //*data.trip = service;*// --order database e include korar jonno
     //console.log(data);
-    fetch("http://localhost:5000/trips", {
+    fetch("https://shrieking-wizard-86176.herokuapp.com/provides", {
       method: "POST",
       headers: {
         "content-type": "application/json",

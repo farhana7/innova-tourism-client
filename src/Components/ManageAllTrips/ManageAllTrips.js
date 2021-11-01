@@ -4,13 +4,13 @@ const ManageAllTrips = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/provides")
+    fetch("https://shrieking-wizard-86176.herokuapp.com/provides")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/provides/${id}`;
+    const url = `https://shrieking-wizard-86176.herokuapp.com/provides/${id}`;
     fetch(url, {
       method: "DELETE",
     })
