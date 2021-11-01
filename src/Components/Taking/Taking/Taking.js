@@ -22,9 +22,6 @@ const Taking = () => {
   } = useForm();
   const { user } = useAuth();
   const onSubmit = (data) => {
-    //* const service = setService();    ---------// 24, 25 line
-    //*data.trip = service;*// --order database e include korar jonno
-    //console.log(data);
     fetch("https://shrieking-wizard-86176.herokuapp.com/provides", {
       method: "POST",
       headers: {
@@ -35,7 +32,7 @@ const Taking = () => {
       .then((res) => res.json())
       .then((result) => {
         if (result.insertedId) {
-          alert("trips proccessed successfully");
+          alert("trips booking proccessed successfully");
           //clearTheCart();//clearTheForm();
           reset();
         }
@@ -54,7 +51,10 @@ const Taking = () => {
       <br />
       <br />
       <br />
-      <form className="taking-form" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className="taking-form bg-yellow-100"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <input defaultValue={user.displayName} {...register("name")} />
         <input
           defaultValue={user.email}

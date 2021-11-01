@@ -35,7 +35,7 @@ const Login = () => {
 
   return (
     <div className="login-form">
-      <div className="bg-green-700">
+      <div className="bg-yellow-100">
         <h2 className="text-gray-900 text-4xl font-bold">Please Login</h2>
         <br />
 
