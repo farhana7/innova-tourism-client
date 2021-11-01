@@ -8,7 +8,7 @@ const Footer = () => {
         <p>
           Phone : + 880 ..........
           <br />
-          website : https://www.innotourism.info/en/
+          website : https://innova-tourism.web.app/
         </p>
       </div>
 

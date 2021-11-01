@@ -21,7 +21,7 @@ const tourGuides = [
 
 const TourGuides = () => {
   return (
-    <div className="container">
+    <div className="container mx-auto  ">
       <h2 className="text-green-700 m-20 font-bold text-4xl ">
         Our Tour Guides
       </h2>
@@ -30,6 +30,7 @@ const TourGuides = () => {
           <TourGuide key={tourguide.id} tourguide={tourguide}></TourGuide>
         ))}
       </div>
+      <div className="w-96 mx-auto block bg-green-900 h-1"></div>
       <div>
         <br />
         <br />
