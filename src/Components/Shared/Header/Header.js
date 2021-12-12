@@ -23,6 +23,9 @@ const Header = () => {
         <NavLink to="/manageAllTrips">
           <button>Manage All Trips</button>
         </NavLink>
+        <NavLink to="/myOrders">
+          <button>MY Orders</button>
+        </NavLink>
         {user?.email ? (
           <button onClick={logOut}>Logout</button>
         ) : (

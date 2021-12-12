@@ -6,6 +6,7 @@ import Services from "./Components/Home/Services/Services";
 import TourGuides from "./Components/Home/TourGuides/TourGuides";
 import Login from "./Components/Login/Login/Login";
 import ManageAllTrips from "./Components/ManageAllTrips/ManageAllTrips";
+import MyOrders from "./Components/MyOrders/MyOrders";
 
 import NotFound from "./Components/NotFound/NotFound";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
@@ -45,6 +46,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/manageAllTrips">
               <ManageAllTrips></ManageAllTrips>
+            </PrivateRoute>
+            <PrivateRoute path="/myOrders">
+              <MyOrders></MyOrders>
             </PrivateRoute>
             <Route path="/tourguides">
               <TourGuides></TourGuides>

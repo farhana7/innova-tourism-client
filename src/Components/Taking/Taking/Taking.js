@@ -9,7 +9,7 @@ const Taking = () => {
   const [service, setService] = useState({});
 
   useEffect(() => {
-    fetch(`https://shrieking-wizard-86176.herokuapp.com/provides/${serviceId}`)
+    fetch(`http://localhost:5000/provides/${serviceId}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -22,7 +22,7 @@ const Taking = () => {
   } = useForm();
   const { user } = useAuth();
   const onSubmit = (data) => {
-    fetch("https://shrieking-wizard-86176.herokuapp.com/provides", {
+    fetch("http://localhost:5000/provides", {
       method: "POST",
       headers: {
         "content-type": "application/json",
