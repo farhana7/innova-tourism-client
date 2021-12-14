@@ -1,21 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import useAuth from "../../hooks/useAuth";
 import "./Register.css";
 
 const Register = () => {
-  //hook form
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const [loginData, setLoginData] = useState({});
+  const history = useHistory();
+  const { user, registerUser, isLoading, authError } = useAuth();
 
-  const { user } = useAuth;
-  const onSubmit = (data) => {
-    console.log(data);
+  const handleOnBlur = (e) => {
+    const field = e.target.name;
+    const value = e.target.value;
+    // console.log(field, value);
+    const newLoginData = { ...loginData };
+    newLoginData[field] = value;
+    // console.log(field, value, newLoginData);
+    // console.log(newLoginData);
+    setLoginData(newLoginData);
   };
+
+  const handleLoginSubmit = (e) => {
+    if (loginData.password !== loginData.password2) {
+      alert("Your password did not match");
+      return;
+    }
+    registerUser(loginData.email, loginData.password, loginData.name, history);
+    e.preventDefault();
+  };
+
+  // //hook form
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm();
+
+  // const { user } = useAuth;
+  // const onSubmit = (data) => {
+  //   console.log(data);
+  // };
 
   return (
     <div className="register-form">
@@ -25,36 +50,39 @@ const Register = () => {
         </h2>
         <br />
 
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <input placeholder="Name" defaultValue="" {...register("Name")} />
+        <form onSubmit={handleLoginSubmit}>
           <input
-            placeholder="Email"
+            placeholder=" Your Name"
             defaultValue=""
-            {...register("Your Email", { required: true })}
+            name="name"
+            onBlur={handleOnBlur}
+          />
+          <input
+            placeholder="Your Email"
+            defaultValue=""
+            name="email"
+            type="email"
+            onBlur={handleOnBlur}
           />
 
-          {errors.email && (
+          {/* {errors.email && (
             <span className="error">This field is required</span>
-          )}
+          )} */}
           <input
             placeholder="Your Password"
-            {...register("Your Password", { required: true })}
+            type="password"
+            name="password"
+            onBlur={handleOnBlur}
           />
           <input
             placeholder="Re-enter Password"
-            {...register("Re-enter Password", { required: true })}
+            type="password"
+            name="password2"
+            onBlur={handleOnBlur}
           />
-          <input
-            placeholder="Address"
-            defaultValue=""
-            {...register("Address")}
-          />
-          <input placeholder="City" defaultValue="" {...register("City")} />
-          <input
-            placeholder="Phone Number"
-            defaultValue=""
-            {...register("Phone Number")}
-          />
+          <input placeholder="Address" name="address" defaultValue="" />
+          <input placeholder="City" defaultValue="" name="city" />
+          <input placeholder="Phone Number" defaultValue="" />
 
           <input type="submit" />
         </form>

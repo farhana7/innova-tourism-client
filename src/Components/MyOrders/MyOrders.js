@@ -8,14 +8,14 @@ const MyOrders = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/takings?email=${user.email}`;
+    const url = `http://localhost:4200/takings?email=${user.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/takings?email=${id}`;
+    const url = `http://localhost:4200/takings?email=${id}`;
     fetch(url, {
       method: "DELETE",
     })
@@ -31,7 +31,10 @@ const MyOrders = () => {
   };
   return (
     <div>
-      <h2>My Orders : {orders.length}</h2>
+      <h1 className="text-green-900 font-bold italic text-6xl mt-5">
+        My Orders
+      </h1>
+      <h2 className="mt-40">My Orders : {orders.length}</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
           <Service key={service.id} service={service}></Service>

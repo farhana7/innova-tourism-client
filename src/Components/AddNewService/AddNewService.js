@@ -1,11 +1,22 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+// import useAuth from "../../hooks/useAuth";
+import useFirebase from "../../hooks/useFirbase";
 import "./AddNewService.css";
 
 const AddNewService = () => {
+  const user = useFirebase();
+  // const user = useAuth();
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
+    fetch("http://localhost:4200/provides", {
+      method: "POST",
+      headers: { "conten-type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => console.log(result));
     console.log(data);
 
     axios

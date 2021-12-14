@@ -10,6 +10,7 @@ const Service = ({ service }) => {
       <img src={img} alt="" />
       <h3 className="text-3xl mt-4 mb-2">{name}</h3>
       <p className="px-3">{description.slice(0, 510)}</p>
+      {/* <h3 className="text-3xl mt-4 mb-2">{price}</h3> */}
 
       <Link className="w-full" to={`/taking/${_id}`}>
         <button className="w-full h-7 bg-red-800 text-white" to="/service">
