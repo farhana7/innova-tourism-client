@@ -1,6 +1,6 @@
 # INNOVA TOURISM
 
-This is Innova Tourism [Create React App](https://innova-tourism.web.app/).
+This is [Innova Tourism](https://innova-tourism.web.app/).
 
 - “The world is a book, and those who do not travel read only a page.” – said Saint Augustine.
 
