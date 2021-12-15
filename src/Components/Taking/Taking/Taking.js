@@ -8,7 +8,7 @@ const Taking = () => {
   const { serviceId } = useParams();
   const [service, setService] = useState({});
   const { user } = useAuth();
-  // const email = sessionStorage.getItem("email");
+  const email = sessionStorage.getItem("email");
 
   useEffect(() => {
     fetch(`http://localhost:4200/provides/${serviceId}`)
@@ -25,7 +25,7 @@ const Taking = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    // data.email = email;
+    data.email = email;
     fetch("http://localhost:4200/confirmOrder", {
       method: "POST",
       headers: {
@@ -60,7 +60,7 @@ const Taking = () => {
             This is for taking a Trip No. : {serviceId}
           </h2>
           <br />
-          <div className="flex items-center justify-between mt-10">
+          <div className="flex items-center justify-between">
             <img className="w-72 h-72" src={service.img} alt="" />
 
             <p>{service.description}</p>
