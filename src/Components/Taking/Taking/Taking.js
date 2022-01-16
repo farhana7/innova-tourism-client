@@ -41,6 +41,7 @@ const Taking = () => {
         //   reset();
         // }
         console.log(result);
+        alert("Ordered successfully");
         //console.log(result);
       });
   };
